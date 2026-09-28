@@ -1,0 +1,27 @@
+TRACE TABLE
+
+MERGE SORT (bottom-up view)
+Pass 1, subarray size 1:
+125 324 218 456 102 389 147 275
+
+Pass 2, subarray size 2:
+125 218 324 456 102 147 275 389
+
+Pass 3, subarray size 4:
+102 125 147 218 275 324 389 456
+
+QUICK SORT (last element selected as pivot)
+Partition 1: range [0..7], pivot = 147
+125 102 147 218 324 389 275 456
+
+Partition 2: range [0..1], pivot = 102
+102 125 147 218 324 389 275 456
+
+Partition 3: range [3..7], pivot = 456
+102 125 147 218 324 389 275 456
+
+Partition 4: range [3..6], pivot = 275
+102 125 147 218 275 389 324 456
+
+Partition 5: range [5..6], pivot = 324
+102 125 147 218 275 324 389 456
